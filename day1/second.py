@@ -12,8 +12,10 @@ offset = len(test_num_array) / 2
 
 # Go through all of the digits in the list
 for idx, num in enumerate(test_num_array):
+    # Fetch the new index based on modulo
     new_idx = (idx + offset) % len(test_num_array)
 
+    # Fetch the number to compare to
     next_num = test_num_array[int(new_idx)]
 
     # If the two digit matches, add it's value to the sum
